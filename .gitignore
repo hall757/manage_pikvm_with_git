@@ -1,0 +1,68 @@
+# start by ignoring everything
+/*
+# include this file
+!.gitignore
+
+# rpi boot config
+!/boot
+/boot/*
+!/boot/config.txt
+
+# files in etc
+!/etc
+/etc/*
+!/etc/fstab
+!/etc/passwd
+!/etc/group
+!/etc/shadow
+!/etc/bash.bash_logout
+!/etc/nut
+!/etc/kvmd
+!/etc/kvmd/janus
+!/etc/kvmd/override.d
+!/etc/kvmd/nginx
+!/etc/kvmd/nginx/ssl
+!/etc/kvmd/vnc
+!/etc/kvmd/vnc/ssl
+# everything in root
+!/root
+!/root/bin
+!/root/.ssh
+# except
+/root/.ssh/id_rsa
+/root/.ssh/known_hosts
+/root/.lesshst
+
+# everything in home
+!/home
+
+!/var
+/var/*
+!/var/lib
+/var/lib/*
+# pikvm config folders
+!/var/lib/kvmd
+/var/lib/kvmd/*
+!/var/lib/kvmd/pst
+/var/lib/kvmd/pst/*
+!/var/lib/kvmd/pst/data
+!/var/lib/kvmd/pst/data/**
+# except for logs
+/var/lib/kvmd/pst/data/certbot/runroot/logs
+
+!/usr
+/usr/*
+!/usr/lib
+/usr/lib/*
+!/usr/lib/systemd
+/usr/lib/systemd/*
+!/usr/lib/systemd/system
+/usr/lib/systemd/system/*
+# modifed nut target to start nut on boot
+!/usr/lib/systemd/system/nut.target
+
+# global ignores
+.viminfo
+.viminfo.tmp
+.*~
+*~

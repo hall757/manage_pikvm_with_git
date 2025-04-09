@@ -1,0 +1,8 @@
+#!/bin/sh
+#set -xe
+mount -o remount,rw /
+mount -o remount,rw /boot
+mount -o remount,rw /var/lib/kvmd/pst
+systemctl daemon-reload
+#set +x
+echo "=== PiKVM is in Read-Write mode ==="

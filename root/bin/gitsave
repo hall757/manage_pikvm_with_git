@@ -1,0 +1,11 @@
+#!/bin/bash
+rw
+cd /
+for f in $(grep '!' /.gitignore | cut -c2- ); do 
+  git add $f
+done
+git commit -m 'update config'
+if [ $? -eq 0 ]||[ _$1 == _force ]; then
+  git push
+fi
+ro

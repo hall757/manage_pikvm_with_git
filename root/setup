@@ -1,0 +1,8 @@
+# misc commands to run 
+rw
+dmesg -n 1
+pacman -su nut htop btop mosh mosquitto base-devel
+pikvm-update
+kvmd-certbot certonly_webroot --agree-tos -n --email admin@example.com -d pikvm.example.com
+kvmd-certbot install_nginx pikvm.example.com
+kvmd-certbot install_vnc pikvm.example.com
