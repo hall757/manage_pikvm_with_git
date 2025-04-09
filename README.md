@@ -6,13 +6,15 @@
 ```bash
 ro
 cd /
-unzip thisarchive.zip
+wget https://github.com/hall757/manage_pikvm_with_git/archive/refs/heads/main.zip
+unzip main.zip
+rm -f main.zip
 git init -b main
 git add .
 git commit -m "initial commit"
 # setup your ssh key to authenticate with github
 git remote add origin REMOTE-URL
-# Double chech that this is a private repo
+# Double check that this is a private repo
 git push -u origin main
 ```
 
