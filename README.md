@@ -4,7 +4,7 @@
 - Initialize git and optionaly setup git to push to a PRIVATE github repo.  This repo will contain all your secrets.
 
 ```bash
-ro
+rw
 cd /
 wget https://github.com/hall757/manage_pikvm_with_git/archive/refs/heads/main.zip
 unzip main.zip
